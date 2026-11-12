@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background: #174c3c;
+    color: white;
+    padding: 30px 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+main {
+    max-width: 850px;
+    margin: auto;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #607d8b;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #174c3c;
+}
+
+.budget-section,
+.expense-section,
+main > section:last-of-type {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #174c3c;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px;
+    border: 1px solid #ccd5d2;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #174c3c;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #267456;
+}
+
+#expenseList {
+    list-style: none;
+}
+
+#expenseList li {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px;
+    border-bottom: 1px solid #e5eae8;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    color: #174c3c;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 12px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}
